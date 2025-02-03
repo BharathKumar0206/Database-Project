@@ -1,0 +1,11 @@
+patient_id,first_name,last_name,dob,gender,contact,address,insurance,medical_history
+1001,Aarav,Sharma,1985-06-15,Male,9876543210,Mumbai,HDFC ERGO,Diabetes
+1002,Ananya,Verma,1990-03-22,Female,8765432109,Delhi,ICICI Lombard,Asthma
+1003,Rohan,Patel,1978-11-05,Male,7654321098,Bangalore,Max Bupa,Hypertension
+1004,Meera,Iyer,1995-09-12,Female,6543210987,Hyderabad,Tata AIG,None
+1005,Vikram,Reddy,1982-07-08,Male,5432109876,Chennai,Religare,Heart Disease
+1006,Priya,Malhotra,1993-05-20,Female,4321098765,Kolkata,Apollo Munich,None
+1007,Kunal,Joshi,1980-12-10,Male,3210987654,Ahmedabad,Bajaj Allianz,Allergy
+1008,Neha,Choudhary,1997-08-15,Female,2109876543,Pune,SBI Health,None
+1009,Arjun,Bose,1989-02-28,Male,1098765432,Jaipur,IFFCO Tokio,Arthritis
+1010,Sanya,Saxena,1994-04-30,Female,9988776655,Lucknow,Future Generali,None

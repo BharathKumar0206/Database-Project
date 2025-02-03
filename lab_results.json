@@ -1,0 +1,72 @@
+[
+    {
+        "lab_id": "L001",
+        "patient_id": "1001",
+        "test_name": "Blood Test 1",
+        "result": "Negative",
+        "test_date": "2025-03-6"
+    },
+    {
+        "lab_id": "L002",
+        "patient_id": "1002",
+        "test_name": "Blood Test 2",
+        "result": "Positive",
+        "test_date": "2025-03-7"
+    },
+    {
+        "lab_id": "L003",
+        "patient_id": "1003",
+        "test_name": "Blood Test 3",
+        "result": "Negative",
+        "test_date": "2025-03-8"
+    },
+    {
+        "lab_id": "L004",
+        "patient_id": "1004",
+        "test_name": "Blood Test 4",
+        "result": "Positive",
+        "test_date": "2025-03-9"
+    },
+    {
+        "lab_id": "L005",
+        "patient_id": "1005",
+        "test_name": "Blood Test 5",
+        "result": "Negative",
+        "test_date": "2025-03-10"
+    },
+    {
+        "lab_id": "L006",
+        "patient_id": "1006",
+        "test_name": "Blood Test 6",
+        "result": "Positive",
+        "test_date": "2025-03-11"
+    },
+    {
+        "lab_id": "L007",
+        "patient_id": "1007",
+        "test_name": "Blood Test 7",
+        "result": "Negative",
+        "test_date": "2025-03-12"
+    },
+    {
+        "lab_id": "L008",
+        "patient_id": "1008",
+        "test_name": "Blood Test 8",
+        "result": "Positive",
+        "test_date": "2025-03-13"
+    },
+    {
+        "lab_id": "L009",
+        "patient_id": "1009",
+        "test_name": "Blood Test 9",
+        "result": "Negative",
+        "test_date": "2025-03-14"
+    },
+    {
+        "lab_id": "L0010",
+        "patient_id": "1010",
+        "test_name": "Blood Test 10",
+        "result": "Positive",
+        "test_date": "2025-03-15"
+    }
+]

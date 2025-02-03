@@ -1,0 +1,11 @@
+doctor_id,first_name,last_name,specialization,phone,email,availability
+D001,Dr. Raj,Mehta,Cardiology,987651001,doctor1@hospital.in,Mon-Fri 9AM-5PM
+D002,Dr. Priya,Kapoor,Neurology,987651002,doctor2@hospital.in,Mon-Sat 10AM-6PM
+D003,Dr. Arvind,Bajpai,Pediatrics,987651003,doctor3@hospital.in,Tue-Thu 8AM-3PM
+D004,Dr. Kavita,Desai,Dermatology,987651004,doctor4@hospital.in,Wed-Fri 11AM-4PM
+D005,Dr. Suresh,Chopra,Orthopedics,987651005,doctor5@hospital.in,Mon-Wed 7AM-2PM
+D006,Dr. Neeta,Ghosh,Oncology,987651006,doctor6@hospital.in,Thu-Sat 12PM-8PM
+D007,Dr. Anil,Sengupta,Endocrinology,987651007,doctor7@hospital.in,Mon-Fri 10AM-6PM
+D008,Dr. Pooja,Rana,Psychiatry,987651008,doctor8@hospital.in,Tue-Sat 9AM-5PM
+D009,Dr. Manish,Khanna,Urology,987651009,doctor9@hospital.in,Wed-Sun 11AM-7PM
+D0010,Dr. Swati,Tiwari,Radiology,987651010,doctor10@hospital.in,Mon-Thu 8AM-4PM

@@ -1,0 +1,11 @@
+staff_id,first_name,last_name,role,contact
+S001,Anil,Singh,Nurse,999881235
+S002,Bhavya,Pillai,Technician,999881236
+S003,Chetan,Rao,Receptionist,999881237
+S004,Divya,Sharma,Accountant,999881238
+S005,Eshwar,Menon,Pharmacist,999881239
+S006,Farhan,Khan,Lab Technician,999881240
+S007,Gaurav,Thakur,Security,999881241
+S008,Harini,Nair,Admin,999881242
+S009,Ishaan,Shastri,IT Support,999881243
+S0010,Jyoti,Yadav,Custodian,999881244

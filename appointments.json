@@ -1,0 +1,82 @@
+[
+    {
+        "appointment_id": "A101",
+        "patient_id": "1001",
+        "doctor_id": "D002",
+        "date": "2025-03-2",
+        "time": "10:30 AM",
+        "status": "Pending"
+    },
+    {
+        "appointment_id": "A102",
+        "patient_id": "1002",
+        "doctor_id": "D003",
+        "date": "2025-03-3",
+        "time": "11:30 AM",
+        "status": "Confirmed"
+    },
+    {
+        "appointment_id": "A103",
+        "patient_id": "1003",
+        "doctor_id": "D004",
+        "date": "2025-03-4",
+        "time": "12:30 AM",
+        "status": "Pending"
+    },
+    {
+        "appointment_id": "A104",
+        "patient_id": "1004",
+        "doctor_id": "D005",
+        "date": "2025-03-5",
+        "time": "13:30 AM",
+        "status": "Confirmed"
+    },
+    {
+        "appointment_id": "A105",
+        "patient_id": "1005",
+        "doctor_id": "D006",
+        "date": "2025-03-6",
+        "time": "14:30 AM",
+        "status": "Pending"
+    },
+    {
+        "appointment_id": "A106",
+        "patient_id": "1006",
+        "doctor_id": "D007",
+        "date": "2025-03-7",
+        "time": "15:30 AM",
+        "status": "Confirmed"
+    },
+    {
+        "appointment_id": "A107",
+        "patient_id": "1007",
+        "doctor_id": "D008",
+        "date": "2025-03-8",
+        "time": "16:30 AM",
+        "status": "Pending"
+    },
+    {
+        "appointment_id": "A108",
+        "patient_id": "1008",
+        "doctor_id": "D009",
+        "date": "2025-03-9",
+        "time": "9:30 AM",
+        "status": "Confirmed"
+    },
+    {
+        "appointment_id": "A109",
+        "patient_id": "1009",
+        "doctor_id": "D0010",
+        "date": "2025-03-10",
+        "time": "10:30 AM",
+        "status": "Pending"
+    },
+    {
+        "appointment_id": "A1010",
+        "patient_id": "1010",
+        "doctor_id": "D001",
+        "date": "2025-03-11",
+        "time": "11:30 AM",
+        "status": "Confirmed"
+    }
+]

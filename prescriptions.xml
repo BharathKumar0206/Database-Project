@@ -1,0 +1,94 @@
+
+<prescriptions>
+
+    <prescription>
+        <prescription_id>P101</prescription_id>
+        <patient_id>1001</patient_id>
+        <doctor_id>D002</doctor_id>
+        <medication>Medicine1</medication>
+        <dosage>200mg</dosage>
+        <duration>15 days</duration>
+    </prescription>
+
+    <prescription>
+        <prescription_id>P102</prescription_id>
+        <patient_id>1002</patient_id>
+        <doctor_id>D003</doctor_id>
+        <medication>Medicine2</medication>
+        <dosage>300mg</dosage>
+        <duration>20 days</duration>
+    </prescription>
+
+    <prescription>
+        <prescription_id>P103</prescription_id>
+        <patient_id>1003</patient_id>
+        <doctor_id>D004</doctor_id>
+        <medication>Medicine3</medication>
+        <dosage>400mg</dosage>
+        <duration>25 days</duration>
+    </prescription>
+
+    <prescription>
+        <prescription_id>P104</prescription_id>
+        <patient_id>1004</patient_id>
+        <doctor_id>D005</doctor_id>
+        <medication>Medicine4</medication>
+        <dosage>500mg</dosage>
+        <duration>30 days</duration>
+    </prescription>
+
+    <prescription>
+        <prescription_id>P105</prescription_id>
+        <patient_id>1005</patient_id>
+        <doctor_id>D006</doctor_id>
+        <medication>Medicine5</medication>
+        <dosage>600mg</dosage>
+        <duration>35 days</duration>
+    </prescription>
+
+    <prescription>
+        <prescription_id>P106</prescription_id>
+        <patient_id>1006</patient_id>
+        <doctor_id>D007</doctor_id>
+        <medication>Medicine6</medication>
+        <dosage>700mg</dosage>
+        <duration>40 days</duration>
+    </prescription>
+
+    <prescription>
+        <prescription_id>P107</prescription_id>
+        <patient_id>1007</patient_id>
+        <doctor_id>D008</doctor_id>
+        <medication>Medicine7</medication>
+        <dosage>800mg</dosage>
+        <duration>45 days</duration>
+    </prescription>
+
+    <prescription>
+        <prescription_id>P108</prescription_id>
+        <patient_id>1008</patient_id>
+        <doctor_id>D009</doctor_id>
+        <medication>Medicine8</medication>
+        <dosage>900mg</dosage>
+        <duration>50 days</duration>
+    </prescription>
+
+    <prescription>
+        <prescription_id>P109</prescription_id>
+        <patient_id>1009</patient_id>
+        <doctor_id>D0010</doctor_id>
+        <medication>Medicine9</medication>
+        <dosage>1000mg</dosage>
+        <duration>55 days</duration>
+    </prescription>
+
+    <prescription>
+        <prescription_id>P1010</prescription_id>
+        <patient_id>1010</patient_id>
+        <doctor_id>D001</doctor_id>
+        <medication>Medicine10</medication>
+        <dosage>1100mg</dosage>
+        <duration>60 days</duration>
+    </prescription>
+
+</prescriptions>

@@ -1,0 +1,11 @@
+insurance_id,provider,policy_number,coverage_type
+1,HDFC ERGO,POL1001,Full
+2,ICICI Lombard,POL1002,Partial
+3,Max Bupa,POL1003,Limited
+4,Tata AIG,POL1004,Full
+5,Religare,POL1005,Partial
+6,Apollo Munich,POL1006,Limited
+7,Bajaj Allianz,POL1007,Full
+8,SBI Health,POL1008,Partial
+9,IFFCO Tokio,POL1009,Limited
+10,Future Generali,POL1010,Full
