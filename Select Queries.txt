@@ -1,0 +1,47 @@
+-- Retrieve all patients
+SELECT * FROM Patient;
+
+-- Retrieve all patient contact details
+SELECT * FROM Patient_Contact;
+
+-- Retrieve all insurance details
+SELECT * FROM Insurance;
+
+-- Retrieve all doctors
+SELECT * FROM Doctor;
+
+-- Retrieve all doctor specializations
+SELECT * FROM Doctor_Specialization;
+
+-- Retrieve all appointments
+SELECT * FROM Appointment;
+
+-- Retrieve all appointment statuses
+SELECT * FROM Appointment_Status;
+
+-- Retrieve all prescriptions
+SELECT * FROM Prescription;
+
+-- Retrieve all medications prescribed
+SELECT * FROM Medications;
+
+-- Retrieve all billing records
+SELECT * FROM Billing;
+
+-- Retrieve all payment statuses
+SELECT * FROM Payment_Status;
+
+-- Retrieve all hospital inventory items
+SELECT * FROM Hospital_Inventory;
+
+-- Retrieve all lab test results
+SELECT * FROM Lab_Test;
+
+-- Retrieve all staff members
+SELECT * FROM Staff;
+
+-- Retrieve all staff roles
+SELECT * FROM Staff_Role;
+
+-- Retrieve all suppliers
+SELECT * FROM Supplier;

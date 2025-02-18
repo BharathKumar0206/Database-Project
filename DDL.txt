@@ -1,0 +1,144 @@
+CREATE DATABASE SmartHealthcare;
+GO
+USE SmartHealthcare;
+GO
+
+
+CREATE TABLE Patient (
+    Patient_ID INT IDENTITY(1,1) PRIMARY KEY,
+    First_Name VARCHAR(50) NOT NULL,
+    Last_Name VARCHAR(50) NOT NULL,
+    DOB DATE NOT NULL,
+    Gender VARCHAR(10) CHECK (Gender IN ('Male', 'Female', 'Other')) NOT NULL,
+    Address TEXT NOT NULL,
+    Insurance_ID INT FOREIGN KEY REFERENCES Insurance(Insurance_ID) ON DELETE SET NULL
+);
+
+
+CREATE TABLE Patient_Contact (
+    Contact_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Patient_ID INT NOT NULL FOREIGN KEY REFERENCES Patient(Patient_ID) ON DELETE CASCADE,
+    Contact_Number VARCHAR(15) NOT NULL UNIQUE
+);
+
+
+CREATE TABLE Insurance (
+    Insurance_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Provider_Name VARCHAR(100) NOT NULL,
+    Policy_Number VARCHAR(50) UNIQUE NOT NULL,
+    Coverage_Details TEXT
+);
+
+
+CREATE TABLE Doctor (
+    Doctor_ID INT IDENTITY(1,1) PRIMARY KEY,
+    First_Name VARCHAR(50) NOT NULL,
+    Last_Name VARCHAR(50) NOT NULL,
+    Contact_Number VARCHAR(15) NOT NULL UNIQUE,
+    Email VARCHAR(100) NOT NULL UNIQUE
+);
+
+
+CREATE TABLE Doctor_Specialization (
+    Specialization_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Doctor_ID INT NOT NULL FOREIGN KEY REFERENCES Doctor(Doctor_ID) ON DELETE CASCADE,
+    Specialization VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE Appointment (
+    Appointment_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Patient_ID INT NOT NULL FOREIGN KEY REFERENCES Patient(Patient_ID) ON DELETE CASCADE,
+    Doctor_ID INT NOT NULL FOREIGN KEY REFERENCES Doctor(Doctor_ID) ON DELETE CASCADE,
+    Date DATE NOT NULL,
+    Time TIME NOT NULL
+);
+
+
+CREATE TABLE Appointment_Status (
+    Status_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Appointment_ID INT UNIQUE NOT NULL FOREIGN KEY REFERENCES Appointment(Appointment_ID) ON DELETE CASCADE,
+    Status VARCHAR(20) CHECK (Status IN ('Scheduled', 'Completed', 'Cancelled')) NOT NULL
+);
+
+
+CREATE TABLE Prescription (
+    Prescription_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Appointment_ID INT NOT NULL FOREIGN KEY REFERENCES Appointment(Appointment_ID) ON DELETE CASCADE
+);
+
+
+CREATE TABLE Medications (
+    Medication_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Prescription_ID INT NOT NULL FOREIGN KEY REFERENCES Prescription(Prescription_ID) ON DELETE CASCADE,
+    Medication VARCHAR(100) NOT NULL,
+    Dosage VARCHAR(50) NOT NULL,
+    Duration INT NOT NULL
+);
+
+
+
+CREATE TABLE Billing (
+    Invoice_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Patient_ID INT NOT NULL FOREIGN KEY REFERENCES Patient(Patient_ID) ON DELETE CASCADE,
+    Amount DECIMAL(10,2) NOT NULL,
+    Insurance_Covered BIT NOT NULL,
+    Payment_Status_ID INT NOT NULL FOREIGN KEY REFERENCES Payment_Status(Payment_Status_ID),
+    Date_Issued DATE NOT NULL,
+    Date_Paid DATE NULL
+);
+
+
+
+CREATE TABLE Payment_Status (
+    Payment_Status_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Status VARCHAR(20) CHECK (Status IN ('Paid', 'Pending', 'Rejected')) NOT NULL
+);
+
+
+
+CREATE TABLE Hospital_Inventory (
+    Item_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Category VARCHAR(50) NOT NULL,
+    Stock_Level INT NOT NULL,
+    Supplier_ID INT NOT NULL FOREIGN KEY REFERENCES Supplier(Supplier_ID) ON DELETE CASCADE
+);
+
+
+
+CREATE TABLE Lab_Test (
+    Lab_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Patient_ID INT NOT NULL FOREIGN KEY REFERENCES Patient(Patient_ID) ON DELETE CASCADE,
+    Test_Name VARCHAR(100) NOT NULL,
+    Result VARCHAR(20) CHECK (Result IN ('Positive', 'Negative', 'Inconclusive')) NOT NULL,
+    Test_Date DATE NOT NULL
+);
+
+
+
+CREATE TABLE Staff (
+    Staff_ID INT IDENTITY(1,1) PRIMARY KEY,
+    First_Name VARCHAR(50) NOT NULL,
+    Last_Name VARCHAR(50) NOT NULL,
+    Contact VARCHAR(15) NOT NULL UNIQUE
+);
+
+
+
+CREATE TABLE Staff_Role (
+    Role_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Staff_ID INT NOT NULL FOREIGN KEY REFERENCES Staff(Staff_ID) ON DELETE CASCADE,
+    Role VARCHAR(100) NOT NULL
+);
+
+
+
+CREATE TABLE Supplier (
+    Supplier_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Contact VARCHAR(50) NOT NULL
+);
+
+
+
