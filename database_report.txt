@@ -1,0 +1,17 @@
+====== SHSProject Database Report ======
+
+Billing Details
+Invoice_ID | Amount | Date_Issued | Date_Paid | Payment_Status
+------------------------------------------------------------
+4 | 5000.00 | 2025-03-08 | None | Cancelled
+
+Appointment Details
+Appointment_ID | Patient_Name | Doctor_Name | Date | Time
+------------------------------------------------------------
+4 | Meera Iyer | Priya | 2025-03-08 | 11:15:00.0000000
+
+Prescription Details
+Prescription_ID | Medication | Dosage | Duration | Doctor_Name
+------------------------------------------------------------
+4 | Amoxicillin | 250mg | 7 days | Priya
+
